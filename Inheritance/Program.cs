@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Xml;
 
 namespace Inheritance
@@ -30,6 +31,9 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var time = DateTime.Now.AddHours(0);
+            Console.WriteLine(time.AddYears(0));
+
 
             Console.WriteLine("*******Birds********");
             var egle = new Bird();
@@ -41,7 +45,7 @@ namespace Inheritance
             egle.food = "Mammals";
             egle.Type = "Bald";
             
-
+            
             
 
 
@@ -70,7 +74,7 @@ namespace Inheritance
             iguana.Type = "Lesser";
             iguana.bloodType = "Cool Blood";
 
-
+           
 
             Console.WriteLine($"{iguana.Name}" +
                 $" type {iguana.Type} " +
@@ -78,7 +82,7 @@ namespace Inheritance
                 $" {iguana.LifeSpean} years and  normaly have {iguana.legs} legs " +
                 $"and likes to eats {iguana.food} {iguana.Name} have " +
                 $"{iguana.bloodType}");
-
+               
         }
     }
 }

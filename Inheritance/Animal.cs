@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance
 {
-    internal class Animal
+    internal class Animal 
     {
      public string Name { get; set; }
      
