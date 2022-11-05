@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml;
 
 namespace Inheritance
 {
@@ -29,11 +30,55 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+
+            Console.WriteLine("*******Birds********");
+            var egle = new Bird();
+            egle.Name = "Egle";
+            egle.LifeSpean = 30;
+            egle.color = "White";
+            egle.lifeEnviroment();
+            egle.BirdMesure(36);
+            egle.food = "Mammals";
+            egle.Type = "Bald";
+
+           
+            
+
+            
+            
+            Console.WriteLine($"The {egle.Name} can live around" +
+                $" {egle.LifeSpean} years and general eats" +
+                $" {egle.food}");
+
+            Console.WriteLine();
+
             /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
+             *  *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
-             */
+            */
+
+            Console.WriteLine("*******Reptiles********");
+
+            var iguana = new Reptile(); 
+            iguana.Name = "Iguanas";
+            iguana.LifeSpean = 15;
+            iguana.Brethe = "Lugs";
+            iguana.color = "Green";
+            iguana.legs = 4;
+            iguana.food = "Flowers";
+            iguana.Type = "Lesser";
+            iguana.bloodType = "Cool Blood";
+
+
+
+            Console.WriteLine($"{iguana.Name}" +
+                $" type {iguana.Type} " +
+                $"are repitiles and live around" +
+                $" {iguana.LifeSpean} years and  normaly have {iguana.legs} legs " +
+                $"and likes to eats {iguana.food} {iguana.Name} have " +
+                $"{iguana.bloodType}");
+
         }
     }
 }
