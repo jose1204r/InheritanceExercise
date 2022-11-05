@@ -37,7 +37,7 @@ namespace Inheritance
             egle.LifeSpean = 30;
             egle.color = "White";
             egle.lifeEnviroment();
-            var Mesure1 =  egle.BirdMesure(36,"inch");
+            var Mesure1 =  egle.BirdMesure(36,"");
             egle.food = "Mammals";
             egle.Type = "Bald";
             
@@ -48,7 +48,7 @@ namespace Inheritance
 
             Console.WriteLine($"The {egle.Name} can live around" +
                 $" {egle.LifeSpean} years and general eats" +
-                $" {egle.food} and their heights is about  {Mesure1}");
+                $" {egle.food} and their heights is about {Mesure1}");
 
             Console.WriteLine();
 
