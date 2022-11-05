@@ -21,9 +21,15 @@ namespace Inheritance
           Console.WriteLine("Birds can hide from predator and inclementweather");
         
         }
-        public string BirdMesure(double mesure) 
+        public string BirdMesure(int ms, string v) 
         {
-            return "Inches";
+            
+            var sd2 = "inches";
+            return  ms  + sd2;
+           
+      
+
+
         }
 
 
